@@ -21,7 +21,7 @@ if "chat_history" not in st.session_state:
     st.session_state.chat_history = []
 
 # Streamlit page title
-st.title("🤖 PiuGPT - Any Query, Any Time!")
+st.title("🤖 MyGPT - Any Query, Any Time!")
 
 # Display chat history
 for message in st.session_state.chat_history:
@@ -29,7 +29,7 @@ for message in st.session_state.chat_history:
         st.markdown(message["content"])
 
 # Input field for user's message
-user_prompt = st.chat_input("Ask Piu👩🏻‍💻...")
+user_prompt = st.chat_input("Ask me anything 👩🏻‍💻...")
 
 if user_prompt:
     st.chat_message("user").markdown(user_prompt)
